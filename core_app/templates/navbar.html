@@ -3,11 +3,11 @@
 
     {% if request.user.is_authenticated %}
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-semibold text-xl tracking-tight text-blue-900"><a href="{% url "transactions_app:transaction_report" %}">Sonali Bank</a></span>
+            <span class="font-semibold text-xl tracking-tight text-blue-900"><a href="{% url "transactions_app:transaction_report" %}">Eagle Bank</a></span>
         </div>
     {% else %}
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-semibold text-xl tracking-tight text-blue-900"><a href="{% url "home" %}">Sonali Bank</a></span>
+            <span class="font-semibold text-xl tracking-tight text-blue-900"><a href="{% url "home" %}">Eagle Bank</a></span>
         </div>
     {% endif %}
 
