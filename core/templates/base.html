@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Dummy Banking System" />
+        <title>{% block head_title %}Banking System{% endblock %}</title>
+        {% block head_extra %}{% endblock %}
+      
+        <!-- Place favicon.ico in the root directory -->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static "img/logo/favicon.png" %}">
+        <!-- CSS here -->
+        <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+        <link rel="stylesheet" href="{% static "css/animate.css" %}">
+        <link rel="stylesheet" href="{% static "css/swiper-bundle.css" %}">
+        <link rel="stylesheet" href="{% static "css/slick.css" %}">
+        <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+        <link rel="stylesheet" href="{% static "css/font-awesome-pro.css" %}"> 
+        <link rel="stylesheet" href="{% static "css/flaticon.css" %}">
+        <link rel="stylesheet" href="{% static "css/spacing.css" %}">
+        <link rel="stylesheet" href="{% static "css/main.css" %}">
+        <style>
+            footer {
+                position: fixed !important;
+                bottom: 0 !important;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body class="bg-indigo-600">
+        {% include 'navbar.html' %}
+        {% block body %}
+            <div class="lg:container lg:mx-auto" id="main">
+                {% include 'messages.html' %}
+                {% block content %}
+                {% endblock %}
+            </div>
+            {% include 'footer.html' %}
+
+        {% endblock %}
+    </body>
+
+    <!-- JS here -->
+    <script data-cfasync="false" src="{% static "js/email-decode.min.js" %}"></script><script src="{% static "js/vendor/jquery.js" %}"></script>
+    <script src="{% static "js/vendor/waypoints.js" %}"></script>
+    <script src="{% static "js/bootstrap-bundle.js" %}"></script>
+    <script src="{% static "js/meanmenu.js" %}"></script>
+    <script src="{% static "js/swiper-bundle.js" %}"></script>
+    <script src="{% static "js/slick.js" %}"></script>
+    <script src="{% static "js/jquery-appear.js" %}"></script>
+    <script src="{% static "js/jquery-knob.js" %}"></script>
+    <script src="{% static "js/magnific-popup.js" %}"></script>
+    <script src="{% static "js/nice-select.js" %}"></script>
+    <script src="{% static "js/purecounter.js" %}"></script>
+    <script src="{% static "js/countdown.js" %}"></script>
+    <script src="{% static "js/wow.js" %}"></script>
+    <script src="{% static "js/isotope-pkgd.js" %}"></script>
+    <script src="{% static "js/imagesloaded-pkgd.js" %}"></script>
+    <script src="{% static "js/ajax-form.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+
+</html>

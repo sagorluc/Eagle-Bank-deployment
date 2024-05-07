@@ -1,1 +1,1 @@
-web: gunicorn mamar_bank.wsgi --log-file -
+web: gunicorn eagle_bank.wsgi --log-file -
